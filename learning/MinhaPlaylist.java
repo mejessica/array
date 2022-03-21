@@ -18,15 +18,15 @@ public class MinhaPlaylist{ //assinatura da classe
     }
     
     public void leMusicas(){
-        try{
-            File arquivo = new File ("MinhaPlaylist.txt");
-            BufferedReader reader = new BufferedReader(new FileReader(arquivo)); //lê e armazena 
-            String linha=null;
-            while((linha=reader.readLine())!=null){
-                adicionaMusica(linha);
+        try{ // try - mais importante do codigo
+            File arquivo = new File ("MinhaPlaylist.txt"); // file: arquivo-texto
+            BufferedReader reader = new BufferedReader(new FileReader(arquivo)); //lê e armazena. leitor de arquivo
+            String linha=null; // ser usada dentro do while
+            while((linha=reader.readLine())!=null){ //leitura da linha
+                adicionaMusica(linha);//metodo para adicionar musica na line
 
             }
-        } catch(Exception ex){ //gera um erro
+        } catch(Exception ex){ //gera um erro para debugar
             ex.printStackTrace();
         }
     } 
