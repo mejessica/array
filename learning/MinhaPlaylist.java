@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class MinhaPlaylist{ //assinatura da classe
     ArrayList<String> nameMusicas = new ArrayList <String>(); //declaraçao da coleçao
     public static void main(String[] args) { //metodo principal de java, assinatura padrao
-        new MinhaPlaylist() .leMusicas(); //instancia objeto 
+        new MinhaPlaylist().leMusicas(); //instancia objeto 
     }
     public void adicionaMusica(String musica){ 
         String[] lista = musica.split("/");
