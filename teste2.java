@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class array2 {
@@ -10,6 +11,8 @@ public class array2 {
 		ListaAluno.add("c");
 		ListaAluno.add("d");
 		ListaAluno.add("e");
+		System.out.println(ListaAluno);
+		Collections.sort(ListaAluno);
 		System.out.println(ListaAluno);
 	}
 }
