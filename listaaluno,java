@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class ListaAluno {
+    public ArayList<Aluno> alunos = new ArrayList<Aluno>();
+    Scanner input = new Scanner (System.in);
+
+    public void adicionaAluno(String nome, int turma, int nota){
+        Aluno aluno = new Aluno(nome, turma, nota);
+        this.alunos.add(aluno);
+    }
+
+    public void printaAluno(){
+        for(int i =0; i <=(this.alunos.size()-1);i++){
+            System.out.println(this.alunos.get(i));
+        }
+    }
+
+    public static void main(String[] args) {
+        ListaAluno listinha = new ListaAluno();
+
+        listinha.adicionaAluno("jessica", 301, 5);
+        listinha.adicionaAluno("sarah", 301, 5);
+        listinha.adicionaAluno("leo", 301, 5);
+
+        listinha.printaAluno();
+    }
+}
+
+/*Aluno al01 = new Aluno("Joao",301,4);
+Aluno al02 = new Aluno("pedro",301,4);
+Aluno al03 = new Aluno("maria",301,4);
+
+listaAluno.adicionaAluno(al01);
+listaAluno.adicionaAluno(al02);
+listaAluno.adicionaAluno(al03);*/
+
+
